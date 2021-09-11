@@ -22,11 +22,11 @@ if __name__ == '__main__':
 
     # ### 2 ###
     with open("today.txt", 'r') as f:
-        date_string = f.read()
+        today_string = f.read()
     # ### ###
 
     # ### 3 ###
-    parsed_date = datetime.date.fromisoformat(date_string)
+    parsed_date = datetime.date.fromisoformat(today_string)
     print("Parsed date object: ", parsed_date)
     # ### ###
 
